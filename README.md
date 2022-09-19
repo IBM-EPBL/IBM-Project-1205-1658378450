@@ -16,5 +16,5 @@ Team member : ROSHNI BALASUBRAMANIAN
 Team member : SUBA VARSHINI V
 
 
-<img src="wp.jpg" alt="Web Phishing">
+<img src="https://www.wizlynxgroup.com/news/wp-content/uploads/2020/08/test2-1024x288.jpg" alt="Web Phishing">
 
