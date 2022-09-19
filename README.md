@@ -9,11 +9,11 @@ Team Size : 4
 
 Team Leader : ABHINAND G 
 
-Team member : ARUNA SRIKAMAKSHI R
+Team member 1 : ARUNA SRIKAMAKSHI R
 
-Team member : ROSHNI BALASUBRAMANIAN
+Team member 2 : ROSHNI BALASUBRAMANIAN
 
-Team member : SUBA VARSHINI V
+Team member 3 : SUBA VARSHINI V
 
 
 <img src="https://www.wizlynxgroup.com/news/wp-content/uploads/2020/08/test2-1024x288.jpg" alt="Web Phishing">
