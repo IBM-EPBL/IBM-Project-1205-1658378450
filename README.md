@@ -5,15 +5,15 @@
 
 Team ID : PNT2022TMID35524
 
-Team Size : 4
+<bold>Team Size :</bold> 4
 
-Team Leader : ABHINAND G 
+<bold>Team Leader :</bold> ABHINAND G 
 
-Team member 1 : ARUNA SRIKAMAKSHI R
+<bold>Team member 1 :</bold> ARUNA SRIKAMAKSHI R
 
-Team member 2 : ROSHNI BALASUBRAMANIAN
+<bold>Team member 2 :</bold> ROSHNI BALASUBRAMANIAN
 
-Team member 3 : SUBA VARSHINI V
+<bold>Team member 3 :</bold> SUBA VARSHINI V
 
 
 <img src="https://www.wizlynxgroup.com/news/wp-content/uploads/2020/08/test2-1024x288.jpg" alt="Web Phishing">
