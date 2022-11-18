@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Phishing Detection</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body class="bg-black muli">
+    <nav class="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-black">
+        <div id="nav-items" class="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center">
+            <a href="#home" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Home</a>
+            <a href="#features" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Features</a>
+            <a href="#team" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Team</a>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section id="home" class="min-h-100vh flex justify-start items-center">
+
+          
+        <div class="mx-5 md-mx-l5">
+            <div>
+                <h1 class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900 ">Keep your browsing SECURE!</h1>
+                
+               
+
+                <div class="br-8 mt-10 inline-flex">
+                    <form action="/login" method ="post">
+                    <input type="text"
+                        class="input-lg half bw-0 fw-200 bg-indigo-lightest-10 white ph-indigo-lightest focus-white opacity-80 fs-s3 py-5 min-w-25vw br-r-0"
+                        class="form__input" name ='url' id="url"
+                        placeholder="Enter URL" required="" />
+                    <button
+                        class="button-lg bg-indigo-lightest-20 indigo-lightest focus-white fw-300 fs-s3 mr-0 br-l-0" role="button">Detect</button>
+                    </form>
+                </div>
+                <div class="fs-s3 mt-3"><h1 style="color:white" >eg:(https://google.com)</h1></span>
+            </div>
+            <div class="col-md" id="form2">
+        
+                <br>
+                <h6 class = "right "><a href= {{ url }} target="_blank">{{ url }}</a></h6>
+                   
+                <br>
+                <h3 id="prediction" style="color:white"></h3>
+                <button class="button2" id="button2" role="button" onclick="window.open('{{url}}')" target="_blank" >Still want to Continue to website?</button>
+            </div> 
+        </div>
+    </section>
+
+    <script>
+        
+        let x = '{{xx}}';
+        if(x==1){
+            var label = "Website is safe to use...";
+            document.getElementById("prediction").innerHTML = label;
+            document.getElementById("button1").style.display="block";
+        }
+        else if (x==-1){
+            var label = "Website is unsafe to use...";
+            document.getElementById("prediction").innerHTML = label ;
+            document.getElementById("button2").style.display="block";
+        }
+        else{
+            document.getElementById("prediction").innerHTML = "" ;
+            document.getElementById("button2").style.display="block";
+        }
+    
+</script>
+
+    <!-- features -->
+    <section id="features" class="p-10 md-p-l5">
+        <div class="flex flex-column md-flex-row mx-auto">
+            <div class="w-100pc md-w-40pc">
+                <div class="br-8 p-5 m-5">
+                    <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><i
+                            data-feather="inbox" class="w-l5"></i></div>
+                    <h4 class="white fw-600 fs-m3 mb-5">URL-Based Features</h4>
+                    <div class="indigo-lightest fw-600 fs-m1 lh-3 opacity-50">URL is the first thing to analyse a website to decide whether it is a phishing or not. As we mentioned before, URLs of phishing domains have some distinctive points. Features which are related to these points are obtained when the URL is processed.</div>
+                    
+                </div>
+            </div>
+            <div class="w-100pc md-w-40pc">
+                <div class="br-8 p-5 m-5">
+                    <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><i
+                            data-feather="cpu" class="w-l5"></i></div>
+                    <h4 class="white fw-600 fs-m3 mb-5">Domain-Based Features</h4>
+                    <div class="indigo-lightest fw-600 fs-m1 opacity-50">The purpose of Phishing Domain Detection is detecting phishing domain names. Therefore, passive queries related to the domain name, which we want to classify as phishing or not, provide useful information to us.</div>
+                   
+                </div>
+            </div>
+            
+            <div class="w-100pc md-w-40pc">
+                <div class="br-8 p-5 m-5">
+                    <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><i
+                            data-feather="database" class="w-l5"></i></div>
+                    <h4 class="white fw-600 fs-m3 mb-5">Page-Based Features</h4>
+                    <div class="indigo-lightest fw-600 fs-m1 opacity-50">Page-Based Features are using information about pages which are calculated reputation ranking services. Some of these features give information about how much reliable a web site is. </div>
+                
+                </div>
+            </div> 
+        </div>
+    </section>
+
+
+
+    <!-- product options -->
+    <section id="team" class="min-h-100vh flex justify-start items-center">
+    <section class="py-l10">
+        <div class="flex flex-column md-flex-row md-w-80pc mx-auto">
+            
+            <div class="w-100pc md-w-50pc">
+                <div class="br-8 p-5 m-5 bg-indigo-lightest-10 pointer hover-scale-up-1 ease-300">
+                    <div class="inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4 uppercase">
+                        Team Leader</div>
+                    <div class="indigo-lightest fw-600 fs-m1">Abhinand G<br><span class="opacity-30"></span> </div>
+                    
+                </div>
+            </div>
+            <div class="w-100pc md-w-50pc">
+                <div class="br-8 p-5 m-5 bg-indigo-lightest-10  pointer hover-scale-up-1 ease-300">
+                    <div class="inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4 uppercase">
+                        Team Member 1</div>
+                    <div class="indigo-lightest fw-600 fs-m1">Aruna Srikamakshi R<span class="opacity-30"> <br></span> </div>
+                    
+
+                </div>
+            </div>
+            <div class="w-100pc md-w-50pc">
+                <div class="br-8 p-5 m-5 bg-indigo-lightest-10 pointer hover-scale-up-1 ease-300">
+                    <div class="inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4 uppercase">
+                        Team Member 2</div>
+                    <div class="indigo-lightest fw-600 fs-m1">Roshni Balasubramanian<br><span class="opacity-30"></span> </div>
+                    
+                </div>
+            </div>
+
+            <div class="w-100pc md-w-50pc">
+                <div class="br-8 p-5 m-5 bg-indigo-lightest-10 pointer hover-scale-up-1 ease-300">
+                    <div class="inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4 uppercase">
+                        Team Member 3</div>
+                    <div class="indigo-lightest fw-600 fs-m1">Suba Varshini<br><span class="opacity-30"></span> </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+</section>
+
+
+    
+
+    <!-- footer -->
+    <footer class="p-5 md-p-l5 bg-indigo-lightest-10">
+        <div class="flex flex-wrap">
+            <div class="md-w-25pc mb-10">
+                <img src="assets/images/logo.png" class="w-l5" alt="">
+                <div class="white opacity-70 fs-s2 mt-4 md-pr-10">
+                    <p> GitHub Project Repository Link: <br> <a href = " https://github.com/IBM-EPBL/IBM-Project-1205-1658378450"> GITHUB REPO </a></p>
+                    <p>Copyright © Hook 2022. <br>All rights reserved.</p>
+                    
+                </div>
+            </div>
+            
+        
+    </footer>
+    <a class="fixed top-50pc right-0 p-3 bg-indigo white hover-scale-up-1 ease-300 no-underline" href="https://gum.co/tifJM" target="_blank" >
+        <i class="w-4" data-feather="download"></i>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
