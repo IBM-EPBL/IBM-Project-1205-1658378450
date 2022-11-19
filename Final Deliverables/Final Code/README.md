@@ -1,1 +1,2 @@
-Final Code
+To run the application, run the command 'python app.py' after entering the API Key and password for the email ID used in the app.py file
+The user has to enter their Email ID and will enter the main prediction page, where the user can enter the URL in the format specified and the results of prediction are displayed. If the URL is malicious, an email is sent to the user warning them that the link is malicious and not to open it.
